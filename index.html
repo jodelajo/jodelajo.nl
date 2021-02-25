@@ -4,18 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <script src="https://kit.fontawesome.com/9449a9d47a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat'>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav_bar.css">
 </head>
 <body class="bg">
 <header>
-<nav><h1>jodelajo</h1>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+<!--<nav><h1>jodelajo</h1>-->
+<!--    <ul>-->
+<!--        <li><a href="#home">Home</a></li>-->
+<!--        <li><a href="#portfolio">Portfolio</a></li>-->
+<!--        <li><a href="#contact">Contact</a></li>-->
+<!--    </ul>-->
+
+    <a href="#main-menu"
+       id="main-menu-toggle"
+       class="menu-toggle"
+       aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars" aria-hidden="true"></span>
+    </a>
+
+<!--    <h1 class="logo">hamburgers</h1>-->
+
+    <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <a href="#main-menu-toggle"
+           id="main-menu-close"
+           class="menu-close"
+           aria-label="Close main menu">
+            <span class="sr-only">Close main menu</span>
+            <span class="fa fa-close" aria-hidden="true"></span>
+        </a>
+        <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <a href="#main-menu-toggle"
+       class="backdrop"
+       tabindex="-1"
+       aria-hidden="true" hidden></a>
+<!--</nav>-->
 </header>
 <main>
         <div id="block_logo">
