@@ -18,31 +18,34 @@ body {
 nav {
     background-color: rgba(31, 28, 28, 0.9);
     font-family: montserrat, sans-serif;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 nav h1 {
-    color: #540225;
+    color: rgba(247, 45, 129, 1);
     font-size: 2.4em;
+    margin-left: 30px;
+
 }
 
-
+#navbar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
 nav label {
     display: inline-block;
-    /*color: white;*/
-    /*background: #a02620;*/
-    /*font-style: ;*/
     font-size: 2.4em;
-    padding: 10px;
-    margin-right: 20px;
-
+    align-self: flex-end;
 }
 
-#menu {
+#menu, #hamburger {
     display: none;
 }
 
@@ -53,7 +56,7 @@ nav label {
     border-top: 1px solid #333;
     text-align: end;
     padding-right: 30px;
-    line-height: 1.6em;
+    line-height: 2.8em;
     color: #ffffff;
     text-decoration: none;
 }
@@ -63,10 +66,6 @@ nav label {
 }
 nav input:checked ~ #menu {
     display: block;
-}
-
-#hamburger {
-    display: none;
 }
 
 main {
