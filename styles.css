@@ -17,36 +17,56 @@ body {
 
 nav {
     background-color: rgba(31, 28, 28, 0.9);
-    padding: 10px 3%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     font-family: montserrat, sans-serif;
     position: sticky;
     top: 0;
-    width: 94%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 nav h1 {
     color: #540225;
     font-size: 2.4em;
 }
 
-/* Hide Hamburger */
+
 nav label {
     display: inline-block;
     /*color: white;*/
-    background: #a02620;
-    font-style: normal;
-    font-size: 1.2em;
+    /*background: #a02620;*/
+    /*font-style: ;*/
+    font-size: 2.4em;
     padding: 10px;
+    margin-right: 20px;
+
 }
 
 #menu {
     display: none;
 }
 
+#menu a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+    text-align: end;
+    padding-right: 30px;
+    line-height: 1.6em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #540225;
+}
 nav input:checked ~ #menu {
     display: block;
+}
+
+#hamburger {
+    display: none;
 }
 
 main {
