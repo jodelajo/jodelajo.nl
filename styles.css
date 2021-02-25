@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
 }
 
 nav {
@@ -143,6 +144,7 @@ footer {
         background-image: url("./assets/bg_jodelajo_panorama.png");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: top left;
     }
 
     main {
