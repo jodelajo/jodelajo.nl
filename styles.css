@@ -12,7 +12,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center bottom;
+}
+.bg {
+    position: fixed;
 }
 
 nav {
@@ -70,7 +73,7 @@ nav input:checked ~ #menu {
 }
 
 main {
-    padding: 8% 6% 3% 6%;
+    padding: 12% 6% 3% 6%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
