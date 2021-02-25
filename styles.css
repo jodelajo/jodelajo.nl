@@ -16,40 +16,40 @@ body {
 }
 
 nav {
-    background-color: #000;
-    padding: 10px;
+    background-color: rgba(31, 28, 28, 0.9);
+    padding: 10px 3%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     font-family: montserrat, sans-serif;
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%;
+    width: 94%;
 }
 nav h1 {
     color: #540225;
     font-size: 2.4em;
 }
-nav ul {
-    list-style-type: none;
-    margin: 0;
+
+/* Hide Hamburger */
+nav label {
+    display: inline-block;
+    /*color: white;*/
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
     padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-
-
 }
-nav li {
-    margin-left: 10px;
-   margin-right: 10px;
+
+#menu {
+    display: none;
 }
-nav li a {
-    text-decoration: none;
-    color: #fff;
+
+nav input:checked ~ #menu {
+    display: block;
 }
 
 main {
-
     padding: 8% 6% 3% 6%;
     display: grid;
     grid-template-columns: 1fr;
@@ -148,6 +148,32 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top left;
+    }
+
+    /* Hide Hamburger */
+    nav label, #hamburger {
+        display: none;
+    }
+
+    #menu {
+        /*list-style-type: none;*/
+        /*margin: 0;*/
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: #fff;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 20%; /* 100% / 5 tabs = 20% */
+        padding: 10px;
+    }
+
+    #menu a:hover {
+        background: #401408;
     }
 
     main {
