@@ -14,9 +14,9 @@ body {
     background-attachment: fixed;
     background-position: center bottom;
 }
-.bg {
-    position: fixed;
-}
+/*.bg {*/
+/*    position: fixed;*/
+/*}*/
 
 nav {
     background-color: rgba(31, 28, 28, 0.9);
