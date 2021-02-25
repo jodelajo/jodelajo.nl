@@ -24,21 +24,22 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 nav h1 {
     color: rgba(247, 45, 129, 1);
     font-size: 2.4em;
-    margin-left: 30px;
+    margin-left: 10px;
 
 }
 
 #navbar {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: 10px;
 }
+
 nav label {
     display: inline-block;
     font-size: 2.4em;
@@ -78,11 +79,6 @@ main {
                 "block_portfolio"
                 "block_image";
     grid-gap: 40px;
-}
-
-#logo {
-    /*height: 50%;*/
-    /*width: 50%;*/
 }
 
 .logo {
