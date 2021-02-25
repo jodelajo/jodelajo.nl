@@ -20,7 +20,7 @@ header {
     width: 100%;
     align-items: flex-end;
     justify-content: flex-end;
-    background-color: #000;
+    background-color: rgba(31, 28, 28, 0.6);
     padding: 10px;
     font-family: montserrat, sans-serif;
     position: fixed;
@@ -155,6 +155,9 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    header {
+        background-color: #000000;
+    }
     body {
         background-image: url("./assets/bg_jodelajo_panorama.png");
         background-repeat: no-repeat;
