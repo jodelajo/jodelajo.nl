@@ -4,21 +4,15 @@
 }
 
 body {
-    height: 100%;
-    width: 100%;
     font-family: sans-serif;
-    color: black;
-}
-
-.bg {
-    background-image: url("./assets/bg_jodelajo_panorama.png");
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    background-image: url("./assets/bg_jodelajo_portrait.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    width: border-box;
-
-
 }
+
 nav {
     background-color: #000;
     padding: 10px;
@@ -51,53 +45,113 @@ nav li a {
     text-decoration: none;
     color: #fff;
 }
-#section1 {
-    margin: 15% 6% 0% 35%;
+
+main {
+
+    padding: 8% 6% 3% 6%;
     display: grid;
-    grid-template-columns: 1.3fr 0.7fr;
-    column-gap: 2.6rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+                "block_logo"
+                "block_portfolio"
+                "block_image";
+    grid-gap: 40px;
 }
 
-#section2 {
-    margin: 5% 6% 10% 35%;
-    display: grid;
-    grid-template-columns: 0.7fr 1.3fr;
-    column-gap: 2.6rem;
-}
-#block_logo, #block2 {
-    border: 1px solid #540225;
-    padding: 10px;
+#logo {
     height: 300px;
-}
-
-#block_portfolio, #port_image {
-    border: 1px solid #540225;
-    padding: 10px;
-    height: 400px;
-}
-
-#block_logo {
-    background-color: hotpink;
-}
-#block2 {
-    background-color: #540225;
-}
-
-#block_portfolio {
-    background-color: aqua;
-}
-
-#port_image {
-    background-color: darkgreen;
+    width: 300px;
 }
 
 .logo {
-    height: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
+
+#block_logo {
+    border: 2px solid #ffffff;
+    background-color: rgba(31, 28, 28, 0.81);
+    grid-area: block_logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#block_black, #block_portfolio {
+    font-family: montserrat, sans-serif;
+    font-variant: small-caps;
+    font-size: 1.8em;
+    background-color: #000;
+    grid-area: block_black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    align-content: flex-end;
+    flex-direction: column;
+}
+#block_black {
+    display: none;
+}
+
+#block_portfolio {
+    background-color: rgba(247, 45, 129, 0.55);
+    grid-area: block_portfolio;
+}
+
+#block_image {
+    background-color: rgba(255, 255, 255, 0.53);
+    grid-area: block_image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*padding: 50px;*/
+    align-content: flex-end;
+    flex-direction: column;
+}
+
 footer {
     background-color: #540225;
     padding: 20px;
     text-align: center;
     color: hotpink;
-    margin: 0;
+    /*margin: 0;*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/*slideshow*/
+.mySlides {
+    display: none;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 100px;
+}
+
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url("./assets/bg_jodelajo_panorama.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main {
+        padding: 10% 6% 3% 35%;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+                "block_logo block_logo block_logo block_logo block_logo block_black block_black block_black"
+                "block_portfolio block_portfolio block_portfolio block_image block_image block_image block_image block_image";
+        grid-gap: 40px;
+    }
+
+    #block_black {
+        display: flex;
+    }
 }
