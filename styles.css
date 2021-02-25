@@ -62,8 +62,8 @@ main {
 }
 
 #logo {
-    height: 300px;
-    width: 300px;
+    /*height: 50%;*/
+    /*width: 50%;*/
 }
 
 .logo {
@@ -81,6 +81,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 
 #block_black, #block_portfolio {
@@ -92,6 +93,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-top: 20px;
     padding-bottom: 30px;
     align-content: flex-end;
     flex-direction: column;
@@ -131,7 +133,8 @@ footer {
     display: none;
     max-width: 80%;
     max-height: 80%;
-    margin: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 @media screen and (min-width: 576px) {
     body {
@@ -157,8 +160,13 @@ footer {
                 "block_portfolio block_portfolio block_portfolio block_image block_image block_image block_image block_image";
         grid-gap: 40px;
     }
-
+    #block_logo{
+        margin-top: 0px;
+    }
     #block_black {
         display: flex;
+    }
+    .mySlides {
+        margin: 100px;
     }
 }
