@@ -75,18 +75,12 @@ main {
     grid-gap: 40px;
 }
 
-.logo {
+.logoPortfolio {
    display: none;
 }
 
 #block_logo {
-    border: 2px solid #ffffff;
-    background-color: rgba(31, 28, 28, 0.81);
-    grid-area: block_logo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+    display: none;
 }
 
 #block_black, #block_portfolio {
@@ -109,7 +103,7 @@ main {
 }
 
 #block_portfolio {
-    background-color: rgba(247, 45, 129, 0.55);
+    background-color: rgba(247, 45, 129, 0.75);
     grid-area: block_portfolio;
 }
 
@@ -123,18 +117,32 @@ main {
     flex-direction: column;
 }
 
-#port_container {
-    column-count: 2;
-    column-gap: 1em;
-    padding: 20px;
+#myBtnContainer {
+    width: 86%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
 .content {
-    display: inline-block;
+    display: none;
     margin: 0 0 1em;
     width: 100%;
 }
+
+.show {
+    display: block;
+}
+
+#port_container {
+    column-count: 1;
+    column-gap: 1em;
+    padding: 20px;
+    overflow: hidden;
+}
+
 .mySlides_port{
     width: 100%;
     height: auto;
@@ -146,7 +154,7 @@ footer {
     background-color: #540225;
     padding: 20px;
     text-align: center;
-    color: hotpink;
+    color: rgba(247, 45, 129, 0.55);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -160,9 +168,34 @@ footer {
     margin-bottom: 20px;
 }
 
+/* Style the buttons */
+.btn {
+    font-family: montserrat, sans-serif;
+    border: 3px solid #000000;
+    outline: none;
+    margin: 3px 8px;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+    background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
 @media screen and (min-width: 576px) {
     body {
         background-image: url("./assets/bg_jodelajo_portrait.png");
+    }
+    #port_container {
+        column-count: 2;
     }
 }
 
@@ -201,6 +234,9 @@ footer {
     #menu a:hover {
         color: #540225;
     }
+    #menu a:active {
+        color: rgba(247, 45, 129, 0.55);
+    }
 
     main {
         padding: 10% 6% 3% 35%;
@@ -213,7 +249,8 @@ footer {
         grid-gap: 40px;
     }
 
-    .logo {
+    .logoPortfolio {
+        display: block;
         height: 80px;
         width: 80px;
         background-color: #ffffff;
@@ -222,7 +259,13 @@ footer {
     }
 
     #block_logo {
-        margin-top: 0;
+        border: 2px solid #ffffff;
+        background-color: rgba(31, 28, 28, 0.81);
+        grid-area: block_logo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*margin-top: 40px;*/
     }
 
     #block_black {
@@ -232,31 +275,8 @@ footer {
     .mySlides {
         margin: 100px;
     }
+
     #port_container {
         column-count: 3;
-    }
-
-    /*.show {*/
-    /*    display: block;*/
-    /*}*/
-
-    /* Style the buttons */
-    .btn {
-        border: none;
-        outline: none;
-        padding: 12px 16px;
-        background-color: white;
-        cursor: pointer;
-    }
-
-    /* Add a grey background color on mouse-over */
-    .btn:hover {
-        background-color: #ddd;
-    }
-
-    /* Add a dark background color to the active button */
-    .btn.active {
-        background-color: #666;
-        color: white;
     }
 }
