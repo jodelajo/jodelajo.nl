@@ -76,11 +76,7 @@ main {
 }
 
 .logo {
-    height: 80px;
-    width: 80px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    margin-bottom: 20px;
+   display: none;
 }
 
 #block_logo {
@@ -125,6 +121,23 @@ main {
     justify-content: center;
     align-content: flex-end;
     flex-direction: column;
+}
+
+#port_container {
+    column-count: 2;
+    column-gap: 1em;
+    padding: 20px;
+}
+
+
+.content {
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
+.mySlides_port{
+    width: 100%;
+    height: auto;
 }
 
 footer {
@@ -200,6 +213,14 @@ footer {
         grid-gap: 40px;
     }
 
+    .logo {
+        height: 80px;
+        width: 80px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
     #block_logo {
         margin-top: 0;
     }
@@ -213,22 +234,11 @@ footer {
     }
     #port_container {
         column-count: 3;
-        column-gap: 1em;
-        padding: 20px;
     }
 
-    .content {
-        display: inline-block;
-        margin: 0 0 1em;
-        width: 100%;
-    }
-    .mySlides_port{
-        width: 100%;
-        height: auto;
-    }
-    .show {
-        display: block;
-    }
+    /*.show {*/
+    /*    display: block;*/
+    /*}*/
 
     /* Style the buttons */
     .btn {
