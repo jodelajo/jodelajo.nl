@@ -118,13 +118,19 @@ main {
 }
 
 #myBtnContainer {
-    width: 86%;
+    width: 160px;
+    height: 160px;
     margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 18px solid #000000;
+    border-radius: 8px;
+    padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    gap:10px;
 }
 .content {
     display: none;
@@ -162,24 +168,28 @@ footer {
 /*slideshow*/
 .mySlides {
     display: none;
-    max-width: 80%;
-    max-height: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    max-width: 90%;
+    max-height: 90%;
+    /*margin-top: 20px;*/
+    /*margin-bottom: 20px;*/
 }
 
 /* Style the buttons */
 .btn {
-    font-family: montserrat, sans-serif;
-    border: 2px solid #000000;
+    border: 8px solid #000000;
     border-radius: 8px;
-    color: #ffffff;
-    font-size: 0.4em;
-    outline: none;
-    margin: 0 6px;
-    padding: 8px 12px;
+    margin: 0;
+    /*padding: 10px;*/
+    width: 45%;
+    height: 45%;
     background-color: #000000;
-    cursor: pointer;
+    color: #ffffff;
+}
+
+.btn a {
+    font-family: montserrat, sans-serif;
+    color: #ffffff;
+    font-size: 0.8em;
 }
 
 /* Add a grey background color on mouse-over */
@@ -191,7 +201,6 @@ footer {
 .btn.active {
     background-color: #ffffff;
     color: #540225;
-    font-weight: bold;
 }
 
 @media screen and (min-width: 576px) {
@@ -200,6 +209,8 @@ footer {
     }
     #port_container {
         column-count: 2;
+        margin: 20px;
+        padding: 0;
     }
 }
 
@@ -255,10 +266,10 @@ footer {
 
     .logoPortfolio {
         display: block;
-        height: 80px;
-        width: 80px;
+        height: 180px;
+        width: 180px;
         background-color: #ffffff;
-        border-radius: 8px;
+        border-radius: 12px;
         margin-bottom: 20px;
     }
 
@@ -277,7 +288,7 @@ footer {
     }
 
     .mySlides {
-        margin: 100px;
+        /*margin: 50px;*/
     }
 
     #port_container {
