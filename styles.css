@@ -76,8 +76,14 @@ main {
 }
 
 .logoPortfolio {
-   display: none;
+    display: block;
+    height: 180px;
+    width: 180px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
+
 
 #block_logo {
     display: none;
@@ -122,9 +128,9 @@ main {
     height: 160px;
     margin-bottom: 20px;
     background-color: #ffffff;
-    border: 18px solid #000000;
+    border: 22px solid #000000;
     border-radius: 8px;
-    padding: 10px;
+    padding: 26px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -176,7 +182,7 @@ footer {
 
 /* Style the buttons */
 .btn {
-    border: 8px solid #000000;
+    border: 12px solid #000000;
     border-radius: 8px;
     margin: 0;
     /*padding: 10px;*/
