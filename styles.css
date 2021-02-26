@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -18,6 +20,7 @@ body {
 nav {
     background-color: rgba(31, 28, 28, 0.9);
     font-family: montserrat, sans-serif;
+    font-weight: 200;
     position: fixed;
     top: 0;
     width: 100%;
@@ -29,15 +32,17 @@ nav {
 }
 
 nav h1 {
+    font-family: "Courier New";
+    font-weight: 200;
     color: rgba(247, 45, 129, 1);
-    font-size: 2.4em;
-    margin-left: 10px;
+    font-size: 2.8em;
+    margin-left: 30px;
 }
 
 #navbar {
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 nav label {
@@ -50,25 +55,14 @@ nav label {
     display: none;
 }
 
-#menu a {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    border-top: 1px solid #333;
-    text-align: end;
-    padding-right: 30px;
-    line-height: 2.8em;
-    color: #ffffff;
-    text-decoration: none;
-}
 
-#menu a:hover {
-    color: #540225;
-}
 nav input:checked ~ #menu {
     display: block;
 }
-
+h2 {
+    font-family: "Courier New";
+    font-weight: lighter;
+}
 main {
     padding: 12% 6% 3% 6%;
     display: grid;
@@ -108,11 +102,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 30px;
     align-content: flex-end;
     flex-direction: column;
 }
+
 #block_black {
     display: none;
 }
@@ -128,17 +123,17 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*padding: 50px;*/
     align-content: flex-end;
     flex-direction: column;
 }
 
 footer {
+    font-family: montserrat, sans-serif;
+    font-weight: 200;
     background-color: #540225;
     padding: 20px;
     text-align: center;
     color: hotpink;
-    /*margin: 0;*/
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -151,6 +146,7 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 @media screen and (min-width: 576px) {
     body {
         background-image: url("./assets/bg_jodelajo_portrait.png");
@@ -170,22 +166,27 @@ footer {
     }
 
     #menu {
-        padding: 10px;
+        /*padding: 10px;*/
         display: flex;
         justify-content: flex-end;
     }
 
+
     #menu a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        padding-left: 40px;
+        /*border-top: 1px solid #333;*/
+        text-align: end;
+        /*padding-right: 30px;*/
+        line-height: 2.8em;
+        color: #ffffff;
         text-decoration: none;
-        color: #fff;
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 20%;
-        padding: 10px;
     }
 
     #menu a:hover {
-        background: #401408;
+        color: #540225;
     }
 
     main {
@@ -199,13 +200,53 @@ footer {
         grid-gap: 40px;
     }
 
-    #block_logo{
-        margin-top: 0px;
+    #block_logo {
+        margin-top: 0;
     }
+
     #block_black {
         display: flex;
     }
+
     .mySlides {
         margin: 100px;
+    }
+    #port_container {
+        column-count: 3;
+        column-gap: 1em;
+        padding: 20px;
+    }
+
+    .content {
+        display: inline-block;
+        margin: 0 0 1em;
+        width: 100%;
+    }
+    .mySlides_port{
+        width: 100%;
+        height: auto;
+    }
+    .show {
+        display: block;
+    }
+
+    /* Style the buttons */
+    .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .btn:hover {
+        background-color: #ddd;
+    }
+
+    /* Add a dark background color to the active button */
+    .btn.active {
+        background-color: #666;
+        color: white;
     }
 }
