@@ -128,7 +128,7 @@ main {
 }
 .content {
     display: none;
-    margin: 0 0 1em;
+    /*margin: 0 0 1em;*/
     width: 100%;
 }
 
