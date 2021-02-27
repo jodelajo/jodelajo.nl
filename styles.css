@@ -178,17 +178,14 @@ main {
     background-color: rgba(247, 45, 129, 0.75);
     grid-area: block_portfolio;
 }
+
 #block_portfolio_hero {
-    /*background-color: rgba(247, 45, 129, 0.75);*/
     padding-left: 20px;
     padding-right: 20px;
 }
-/*#block_portfolio_hero .logoPortfolio {*/
-/*    !*width: 60%;*!*/
-/*    border-radius: 12px;*/
-/*}*/
+
 #block_image {
-    background-color: rgba(255, 255, 255, 0.53);
+    background-color: rgba(255, 255, 255, 0.81);
     grid-area: block_image;
     display: flex;
     align-items: center;
@@ -198,6 +195,7 @@ main {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 #block_image_hero {
     background-color: rgba(255, 255, 255, 0.53);
     grid-area: block_image;
@@ -227,13 +225,10 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
     gap: 10px;
 }
 .content {
     display: none;
-    /*margin: 0 0 1em;*/
     width: 100%;
 }
 
@@ -243,8 +238,6 @@ main {
 
 #port_container {
     column-count: 1;
-    /*gap: 1em;*/
-    /*padding: 20px;*/
     overflow: hidden;
 }
 
@@ -269,16 +262,12 @@ footer {
     display: none;
     max-width: 90%;
     max-height: 90%;
-    /*margin-top: 20px;*/
-    /*margin-bottom: 20px;*/
 }
 
 /* Style the buttons */
 .btn {
     border: 8px solid #000000;
-    /*border-radius: 8px;*/
     margin: 0;
-    /*padding: 10px;*/
     width: 45%;
     height: 45%;
     background-color: #000000;
@@ -288,7 +277,6 @@ footer {
 .btn a {
     font-family: montserrat, sans-serif;
     color: #ffffff;
-    /*font-size: 0.8em;*/
 }
 
 /* Add a grey background color on mouse-over */
@@ -390,12 +378,9 @@ footer {
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
-        /*height: 90%;*/
         width: 50%;
         margin-left: 20px;
         margin-right: 20px;
-        /*width: 100px;*/
-        /*height: 100px;*/
         padding-top: 20px;
         padding-bottom: 20px;
         border: 12px solid #000000;
@@ -403,11 +388,8 @@ footer {
 
     .btn {
         border: 4px solid #000000;
-        /*border-radius: 8px;*/
-        /*margin: 0;*/
         padding: 2px;
         width: 80%;
-        /*height: 45%;*/
         background-color: #000000;
         color: #ffffff;
     }
@@ -425,17 +407,9 @@ footer {
         display: flex;
     }
 
-    .mySlides {
-        /*margin: 50px;*/
-    }
-
     #port_container {
         column-count: 3;
     }
-
-    /*.btn {*/
-    /*    font-size: 1.0em;*/
-    /*}*/
 }
 
 @media screen and (min-width: 1700px) {
@@ -456,8 +430,6 @@ footer {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        /*margin-left: auto;*/
-        /*margin-right: auto;*/
         gap: 10px;
     }
     .btn {
