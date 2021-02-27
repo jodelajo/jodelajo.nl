@@ -1,8 +1,7 @@
-
+var slideIndex = 0;
 carousel();
 
 function carousel() {
-    var slideIndex = 0;
     let i;
     var x = document.getElementsByClassName("mySlides");
     for (i = 0; i < x.length; i++) {

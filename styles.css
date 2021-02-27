@@ -83,7 +83,7 @@ nav input:checked ~ #menu {
 
 }
 h2 {
-    font-family: "Courier New";
+    font-family: "montserrat";
     font-weight: lighter;
     font-size: 2.4em;
 }
@@ -110,10 +110,40 @@ main {
 
 }
 
+#hero-image {
+    width: 90%;
+}
+
+#block_logo_hero {
+    border: 2px solid #ffffff;
+    background-color: rgba(31, 28, 28, 0.81);
+    grid-area: block_logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    row-gap: 10px;
+}
+#externe-link {
+    background-color: #000000;
+    width: 90%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#externe-link a {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgba(247, 45, 129, 1);
+}
 
 #block_logo {
     display: none;
 }
+
 
 #block_black, #block_portfolio {
     font-family: montserrat, sans-serif;
@@ -150,6 +180,22 @@ main {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+#block_image_hero {
+    background-color: rgba(255, 255, 255, 0.53);
+    grid-area: block_image;
+    padding: 50px;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: rgba(31, 28, 28, 0.81);
+    line-height: 1.6em;
+}
+
+#block_image_hero li {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
 
 #myBtnContainer {
     font-size: 6px;
@@ -290,7 +336,7 @@ footer {
     }
 
     main {
-        padding: 8% 6% 8% 35%;
+        padding: 8% 6% 8% 25%;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: auto;
@@ -299,6 +345,7 @@ footer {
                 "block_portfolio block_portfolio block_image block_image block_image block_image block_image block_image";
         grid-gap: 40px;
     }
+
 
     .logoPortfolio {
         display: block;
@@ -322,12 +369,13 @@ footer {
         /*height: 100px;*/
         padding-top: 20px;
         padding-bottom: 20px;
+        border: 12px solid #000000;
     }
 
     .btn {
         border: 4px solid #000000;
         /*border-radius: 8px;*/
-        margin: 0;
+        /*margin: 0;*/
         padding: 2px;
         width: 80%;
         /*height: 45%;*/
@@ -361,7 +409,7 @@ footer {
     /*}*/
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1700px) {
     .logoPortfolio {
         display: block;
         height: 180px;
