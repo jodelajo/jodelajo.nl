@@ -85,7 +85,7 @@ nav input:checked ~ #menu {
 h2 {
     font-family: "montserrat";
     font-weight: lighter;
-    font-size: 2em;
+    font-size: 1.4em;
 }
 main {
     padding: 12% 6% 3% 6%;
@@ -113,8 +113,8 @@ main {
     background-color: #ffffff;
     border-radius: 12px;
     margin-bottom: 20px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-left: auto;
     margin-right: auto;
 
@@ -306,6 +306,11 @@ footer {
     body {
         background-image: url("./assets/bg_jodelajo_portrait.png");
     }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
     .logoPortfolio {
         width: 120px;
         height: 120px;
