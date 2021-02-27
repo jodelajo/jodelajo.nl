@@ -85,7 +85,7 @@ nav input:checked ~ #menu {
 h2 {
     font-family: "montserrat";
     font-weight: lighter;
-    font-size: 2.4em;
+    font-size: 2em;
 }
 main {
     padding: 12% 6% 3% 6%;
@@ -99,12 +99,22 @@ main {
     grid-gap: 40px;
 }
 
+#main-hero {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+                "block_portfolio block_logo block_logo"
+                "block_image block_image block_image";
+}
+
 .logoPortfolio {
     display: block;
     background-color: #ffffff;
-    border-radius: 16px;
+    border-radius: 12px;
     margin-bottom: 20px;
-    width: 30%;
+    width: 100px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
 
@@ -122,7 +132,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 30px;
+    padding: 3%;
     row-gap: 10px;
 }
 #externe-link {
@@ -145,7 +155,7 @@ main {
 }
 
 
-#block_black, #block_portfolio {
+#block_black, #block_portfolio, #block_portfolio_hero {
     font-family: montserrat, sans-serif;
     font-variant: small-caps;
     /*font-size: 1.6em;*/
@@ -164,11 +174,19 @@ main {
     display: none;
 }
 
-#block_portfolio {
+#block_portfolio, #block_portfolio_hero {
     background-color: rgba(247, 45, 129, 0.75);
     grid-area: block_portfolio;
 }
-
+#block_portfolio_hero {
+    /*background-color: rgba(247, 45, 129, 0.75);*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*#block_portfolio_hero .logoPortfolio {*/
+/*    !*width: 60%;*!*/
+/*    border-radius: 12px;*/
+/*}*/
 #block_image {
     background-color: rgba(255, 255, 255, 0.53);
     grid-area: block_image;
@@ -183,11 +201,11 @@ main {
 #block_image_hero {
     background-color: rgba(255, 255, 255, 0.53);
     grid-area: block_image;
-    padding: 50px;
+    padding: 6%;
     font-family: montserrat, sans-serif;
     font-weight: 400;
     font-size: 1.2em;
-    color: rgba(31, 28, 28, 0.81);
+    color: rgba(31, 28, 28, 0.7);
     line-height: 1.6em;
 }
 
@@ -288,6 +306,11 @@ footer {
     body {
         background-image: url("./assets/bg_jodelajo_portrait.png");
     }
+    .logoPortfolio {
+        width: 120px;
+        height: 120px;
+    }
+
     #port_container {
         column-count: 2;
         margin: 20px;
@@ -336,7 +359,7 @@ footer {
     }
 
     main {
-        padding: 8% 6% 8% 25%;
+        padding: 8% 6% 8% 30%;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: auto;
@@ -346,14 +369,15 @@ footer {
         grid-gap: 40px;
     }
 
-
-    .logoPortfolio {
-        display: block;
-        height: 100px;
-        width: 100px;
-        background-color: #ffffff;
-        border-radius: 12px;
+    #main-hero {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+                "block_logo block_logo block_logo block_logo block_logo block_logo block_black block_black"
+                "block_portfolio block_portfolio block_image block_image block_image block_image block_image block_image";
     }
+
 
     #myBtnContainer {
         display: flex;
@@ -411,12 +435,8 @@ footer {
 
 @media screen and (min-width: 1700px) {
     .logoPortfolio {
-        display: block;
         height: 180px;
         width: 180px;
-        background-color: #ffffff;
-        border-radius: 12px;
-        margin-bottom: 20px;
     }
 
     #myBtnContainer {
