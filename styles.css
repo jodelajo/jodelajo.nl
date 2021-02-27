@@ -16,11 +16,12 @@ body {
     background-attachment: fixed;
     background-position: center top;
 }
-#overlay{
-    background-color: rgba(31, 28, 28, 0.6);
-    width: 100%;
-    height: 100%;
-}
+/*#overlay{*/
+/*    background-color: rgba(31, 28, 28, 0.6);*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    background-size: cover;*/
+/*}*/
 
 nav {
     background-color: rgba(31, 28, 28, 0.9);
@@ -84,6 +85,7 @@ nav input:checked ~ #menu {
 h2 {
     font-family: "Courier New";
     font-weight: lighter;
+    font-size: 2.4em;
 }
 main {
     padding: 12% 6% 3% 6%;
@@ -102,7 +104,7 @@ main {
     background-color: #ffffff;
     border-radius: 16px;
     margin-bottom: 20px;
-    width: 44%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
 
@@ -116,7 +118,7 @@ main {
 #block_black, #block_portfolio {
     font-family: montserrat, sans-serif;
     font-variant: small-caps;
-    font-size: 1.8em;
+    /*font-size: 1.6em;*/
     background-color: #000;
     grid-area: block_black;
     display: flex;
@@ -150,20 +152,20 @@ main {
 }
 
 #myBtnContainer {
-    font-size: 8px;
-    width: 130px;
-    height: 130px;
+    font-size: 6px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 20px;
     background-color: #ffffff;
-    border: 26px solid #000000;
+    border: 18px solid #000000;
     border-radius: 20px;
-    padding: 18px;
+    padding: 14px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    gap:10px;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    gap: 10px;
 }
 .content {
     display: none;
@@ -247,7 +249,8 @@ footer {
     }
 }
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 1400px) {
     body {
         background-image: url("./assets/bg_jodelajo_panorama.png");
         background-repeat: no-repeat;
@@ -299,11 +302,15 @@ footer {
 
     .logoPortfolio {
         display: block;
-        height: 180px;
-        width: 180px;
+        height: 100px;
+        width: 100px;
         background-color: #ffffff;
         border-radius: 12px;
-        margin-bottom: 20px;
+    }
+
+    #myBtnContainer {
+        width: 100px;
+        height: 100px;
     }
 
     #block_logo {
@@ -331,4 +338,19 @@ footer {
     /*.btn {*/
     /*    font-size: 1.0em;*/
     /*}*/
+}
+
+@media screen and (min-width: 1600px) {
+    .logoPortfolio {
+        display: block;
+        height: 180px;
+        width: 180px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+    #myBtnContainer {
+        width: 130px;
+        height: 130px;
+    }
 }
