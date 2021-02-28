@@ -56,7 +56,7 @@ nav input:checked ~ #menu {
 ## css desktop size:
 ```css
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 992px) {
     nav label, #hamburger {
         display: none;
     }

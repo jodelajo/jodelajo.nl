@@ -111,10 +111,10 @@ main {
 .logoPortfolio {
     display: block;
     background-color: #ffffff;
-    border-radius: 12px;
+    border-radius: 4px;
     margin-bottom: 20px;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin-left: auto;
     margin-right: auto;
 
@@ -289,6 +289,15 @@ footer {
     background-color: #ffffff;
     color: #540225;
 }
+
+@media screen and (min-width: 480px) {
+    .logoPortfolio {
+        width: 120px;
+        height: 120px;
+        border-radius: 12px;
+    }
+}
+
 
 @media screen and (min-width: 576px) {
     body {
