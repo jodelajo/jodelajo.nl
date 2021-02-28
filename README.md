@@ -1,7 +1,8 @@
 # jodelajo.nl
 
 # 1. great css hamburger
-##html:
+https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/
+## html:
 ```html
 <div id="navbar">
         <label for="hamburger">&#9776;</label>
@@ -65,7 +66,7 @@ nav input:checked ~ #menu {
         display: flex;
         justify-content: flex-end;
     }
-    
+
     #menu a {
         box-sizing: border-box;
         display: block;
@@ -80,10 +81,11 @@ nav input:checked ~ #menu {
     #menu a:hover {
         color: #540225;
     }
-    
+
     #menu a:active {
         color: rgba(247, 45, 129, 0.55);
     }
+}
 ```
 # 2. automatic slider javascript
 ## html:
