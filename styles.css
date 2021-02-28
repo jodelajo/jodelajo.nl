@@ -83,7 +83,7 @@ nav input:checked ~ #menu {
 
 }
 h2 {
-    font-family: "montserrat";
+    font-family: "montserrat", 'sans-serif';
     font-weight: lighter;
     font-size: 1em;
 }
@@ -100,12 +100,14 @@ main {
 }
 
 #main-hero {
+    padding: 20% 6% 3% 6%;
     display: grid;
     grid-template-columns: 3fr;
     grid-template-rows: auto;
     grid-template-areas:
                 "block_portfolio block_logo block_logo"
                 "block_image block_image block_image";
+    grid-gap: 20px;
 }
 
 .logoPortfolio {
@@ -203,7 +205,7 @@ main {
     font-family: montserrat, sans-serif;
     font-weight: 400;
     font-size: 1.2em;
-    color: rgba(31, 28, 28, 0.7);
+    color: rgba(31, 28, 28, 0.9);
     line-height: 1.6em;
 }
 
@@ -364,7 +366,7 @@ footer {
     }
 
     main {
-        padding: 8% 6% 8% 30%;
+        padding: 6% 6% 6% 30%;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: auto;
@@ -375,12 +377,14 @@ footer {
     }
 
     #main-hero {
+        padding: 6% 6% 6% 30%;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
                 "block_logo block_logo block_logo block_logo block_logo block_logo block_black block_black"
                 "block_portfolio block_portfolio block_image block_image block_image block_image block_image block_image";
+        grid-gap: 40px;
     }
 
 

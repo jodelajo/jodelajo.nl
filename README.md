@@ -210,8 +210,7 @@ Something did go wrong. Didn't display "show all" gallery at default. Had to for
 }
 ```
 
-## css desk-top: 
-@media screen and (min-width: 1400px)
+## css desk-top:
 ```css
 @media screen and (min-width: 1400px) {
 
