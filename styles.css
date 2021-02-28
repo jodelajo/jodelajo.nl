@@ -100,7 +100,7 @@ main {
 }
 
 #main-hero {
-    padding: 20% 6% 3% 6%;
+    padding: 22% 6% 3% 6%;
     display: grid;
     grid-template-columns: 3fr;
     grid-template-rows: auto;
@@ -109,6 +109,7 @@ main {
                 "block_image block_image block_image";
     grid-gap: 20px;
 }
+
 
 .logoPortfolio {
     display: block;
