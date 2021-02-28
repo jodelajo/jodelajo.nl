@@ -13,7 +13,7 @@
         </div>
     </div>
 ```
-##css mobile size:
+## css mobile size:
 ```css
 #navbar {
     display: flex;
@@ -53,7 +53,7 @@ nav input:checked ~ #menu {
 
 }
 ```
-##css desktop size:
+## css desktop size:
 ```css
 
 @media screen and (min-width: 1400px) {
@@ -85,8 +85,8 @@ nav input:checked ~ #menu {
         color: rgba(247, 45, 129, 0.55);
     }
 ```
-#2. automatic slider javascript
-##html:
+# 2. automatic slider javascript
+## html:
 ```html
  <div id="block_image">
             <img class="mySlides" src="assets/portfolio/haringvrouw.png" alt="haringvrouw">
@@ -96,14 +96,14 @@ nav input:checked ~ #menu {
         </div>
 ```
 
-##css:
+## css:
 ```css
 .mySlides {
     display: none;
 }
 ```
 
-##javascript:
+## javascript:
 ```javascript
 var slideIndex = 0;
 carousel();
@@ -121,10 +121,10 @@ function carousel() {
     setTimeout(carousel, 4000);
 }
 ```
-#3. image gallery with filter function
+# 3. image gallery with filter function
 
 Something did go wrong. Didn't display "show all" gallery at default. Had to force it with adding "show" in class in html.
-##html:
+## html:
 ```html
  <div id="port_container">
     <div class="content website show">
@@ -154,7 +154,7 @@ Something did go wrong. Didn't display "show all" gallery at default. Had to for
     </div>
 </div>
 ```
-##css mobile:
+## css mobile:
 ```css
 #myBtnContainer {
     width: 120px;
@@ -208,7 +208,7 @@ Something did go wrong. Didn't display "show all" gallery at default. Had to for
 }
 ```
 
-##css desk-top: 
+## css desk-top: 
 @media screen and (min-width: 1400px)
 ```css
 @media screen and (min-width: 1400px) {
@@ -236,7 +236,7 @@ Something did go wrong. Didn't display "show all" gallery at default. Had to for
     }
 }
 ```
-##javascript:
+## javascript:
 ```javascript
 
 filterSelection("all")
