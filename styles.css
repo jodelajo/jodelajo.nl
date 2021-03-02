@@ -310,7 +310,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
     body {
         background-image: url("./assets/bg_21.png");
         background-repeat: no-repeat;
