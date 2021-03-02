@@ -380,7 +380,8 @@ footer {
     }
     #button a {
         color: #ffffff;
-        font-size: 50px;
+        font-size: 80px;
+        /*opacity: 50;*/
     }
 
     nav label, #hamburger {
