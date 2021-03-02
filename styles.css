@@ -361,7 +361,7 @@ footer {
     }
 
     #button_div {
-        margin-top: 70px;
+        margin-top: 60px;
         margin-left: 520px;
         /*display: flex;*/
         /*flex-direction: column;*/
@@ -381,8 +381,8 @@ footer {
     #button a {
         color: #ffffff;
         font-size: 100px;
-        letter-spacing: -25px;
-        /*opacity: 50;*/
+        letter-spacing: -35px;
+        opacity: 50%;
     }
 
     nav label, #hamburger {
