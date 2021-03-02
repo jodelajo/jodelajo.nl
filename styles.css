@@ -363,10 +363,10 @@ footer {
     #button_div {
         margin-top: 160px;
         margin-left: 650px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-end;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*flex-wrap: wrap;*/
+        /*justify-content: flex-end;*/
         position: relative;
     }
 
