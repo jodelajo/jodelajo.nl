@@ -327,7 +327,7 @@ footer {
     }
 
     #landing-page {
-        padding: 35% 20% 20% 30%;
+        padding: 35% 10% 20% 30%;
 
     }
 
@@ -361,7 +361,7 @@ footer {
     }
 
     #button_div {
-        margin-top: 160px;
+        margin-top: 100px;
         margin-left: 500px;
         /*display: flex;*/
         /*flex-direction: column;*/
@@ -380,7 +380,7 @@ footer {
     }
     #button a {
         color: #ffffff;
-        font-size: 80px;
+        font-size: 60px;
         /*opacity: 50;*/
     }
 
