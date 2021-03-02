@@ -343,7 +343,7 @@ footer {
         margin: 0 auto 0 auto; /* Gives that scrolling effect as the typing happens */
         letter-spacing: .15em; /* Adjust as needed */
         animation:
-                typing 3.5s steps(25, end),
+                typing 4s steps(45, end),
                 blink-caret .75s step-end infinite;
     }
 
@@ -362,7 +362,7 @@ footer {
 
     #button_div {
         margin-top: 160px;
-        margin-left: 650px;
+        margin-left: 500px;
         /*display: flex;*/
         /*flex-direction: column;*/
         /*flex-wrap: wrap;*/
