@@ -367,9 +367,9 @@ footer {
         50% { border-color: orange; }
     }
     #button {
-        width: 300px;
-        height: 200px;
-        background-color: transparent;
+        /*width: 300px;*/
+        /*height: 200px;*/
+        /*background-color: transparent;*/
         position: fixed;
         /*margin-top: 400px;*/
 
