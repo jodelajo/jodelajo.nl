@@ -327,7 +327,7 @@ footer {
     }
 
     #landing-page {
-        margin-top: 40%;
+        padding-top: 30%;
         padding-left: 30%;
         padding-right: 20%;
         display: flex;
@@ -335,8 +335,6 @@ footer {
         flex-wrap: wrap;
         justify-content: flex-end;
         position: relative;
-
-
     }
 
     .typewriter  {
@@ -344,7 +342,7 @@ footer {
         font-family: "Courier New";
         font-size: 2.4em;
         font-weight: 200;
-        /*position: absolute;*/
+        position: fixed;
         overflow: hidden; /* Ensures the content is not revealed until the animation */
         border-right: .15em solid orange; /* The typwriter cursor */
         white-space: nowrap; /* Keeps the content on a single line */
