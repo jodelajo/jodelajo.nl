@@ -361,7 +361,7 @@ footer {
     }
 
     #button_div {
-        margin-top: 20px;
+        margin-top: 70px;
         margin-left: 520px;
         /*display: flex;*/
         /*flex-direction: column;*/
@@ -380,7 +380,8 @@ footer {
     }
     #button a {
         color: #ffffff;
-        font-size: 50px;
+        font-size: 100px;
+        letter-spacing: -25px;
         /*opacity: 50;*/
     }
 
