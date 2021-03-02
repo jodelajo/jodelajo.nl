@@ -341,7 +341,7 @@ footer {
     .typewriter  {
         color: #000000;
         font-family: "Courier New";
-        font-size: 2.4em;
+        font-size: 1.8em;
         font-weight: 200;
         position: fixed;
         overflow: hidden; /* Ensures the content is not revealed until the animation */
