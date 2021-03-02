@@ -324,6 +324,7 @@ footer {
         background-position: top left;
 
 
+
     }
 
     #landing-page {
@@ -360,30 +361,30 @@ footer {
         50% { border-color: orange; }
     }
 
-    #button_div {
-        margin-top: 60px;
-        margin-left: 520px;
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*flex-wrap: wrap;*/
-        /*justify-content: flex-end;*/
-        position: relative;
-    }
+    /*#button_div {*/
+    /*    margin-top: 60px;*/
+    /*    margin-left: 520px;*/
+    /*    !*display: flex;*!*/
+    /*    !*flex-direction: column;*!*/
+    /*    !*flex-wrap: wrap;*!*/
+    /*    !*justify-content: flex-end;*!*/
+    /*    position: relative;*/
+    /*}*/
 
-    #button {
-        /*width: 300px;*/
-        /*height: 200px;*/
-        /*background-color: transparent;*/
-        position: fixed;
+    /*#button {*/
+    /*    !*width: 300px;*!*/
+    /*    !*height: 200px;*!*/
+    /*    !*background-color: transparent;*!*/
+    /*    position: fixed;*/
 
 
-    }
-    #button a {
-        color: #ffffff;
-        font-size: 100px;
-        letter-spacing: -35px;
-        opacity: 50%;
-    }
+    /*}*/
+    /*#button a {*/
+    /*    color: #ffffff;*/
+    /*    font-size: 100px;*/
+    /*    letter-spacing: -35px;*/
+    /*    opacity: 50%;*/
+    /*}*/
 
     nav label, #hamburger {
         display: none;
